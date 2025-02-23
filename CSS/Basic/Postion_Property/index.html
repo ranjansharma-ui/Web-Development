@@ -4,20 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+
+        .image2{
+            /* position: relative;
+            top: 100px;
+            left: 200px; */
+
+            /* position: absolute; /* overlaping
+            top: 100px; */
+        }
+
+        .contrainner{
+            position: relative;
+            height: 8000px;
+            background-color: beige;
+
+
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            position: sticky;
+            /* position: relative; */
+            top: 100px;
+        }
+
+        .box{
+            background-color:aquamarine ;
+            height: 5000px;
+        }
+    </style>
 </head>
 <body>
     <div class="contrainner">
         <img
          src="poster1.jpg" 
          alt="Poster1"
-         height="300px"
-         width="300px"
-         
-
-
-        
+         height="200px"
+         width="200px"
+         class="image1"
 
         >
+
+        <img
+         src="poster2.jpg" 
+         alt="Poster1"
+         height="200px"
+         width="200px"
+         class="image2"
+
+        >
+
+        <img
+         src="poster3.jpg" 
+         alt="Poster1"
+         height="200px"
+         width="200px"
+         class="image3"
+
+        >
+
+        <img
+         src="poster4.png" 
+         alt="Poster1"
+         height="200px"
+         width="200px"
+         class="image4"
+
+        >
+
+        
+    </div>
+
+    <div class="box">
+
     </div>
     
 </body>
