@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            height: 200px;
+        }
+
+        .box{
+
+           
+
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+
+
+            /* box-shadow: 7px 5px brown; */
+            /* box-shadow: 10px 15px 50px brown; */
+            /* box-shadow: 10px 15px 5px 100px brown; */
+
+
+            /* box-shadow: inset 10px 15px brown; */
+            /* box-shadow: 10px 15px red, 15px 8px green; */
+
+
+
+
+        }
+
+        #head1{
+            /* text-shadow: 2px 3px 2px rgb(132, 30, 30); */
+
+            /* text-shadow: yellow 12px 13px 2px ; */
+
+            /* text-shadow: 12px 13px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.png" >
+            <h2 id="head1">Welcome to code</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias cupiditate nemo, reiciendis id quibusdam laudantium ex sed deleniti ut.</p>
+        </div>
+    </div>
+</body>
+</html>
