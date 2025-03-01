@@ -39,5 +39,20 @@ console.log(arr);
 arr.shift();
 arr.unshift('Rnajan');
 
+arr.push(20);
+arr.push(30);
+
+arr.slice(2,4);
+console.log(arr.slice(2,4));
+
+//splice :- Content change,replace
+
+arr.splice(1,2,'kunal');
+arr.splice(1,0,'price')
+console.log(arr);
+
+
+
+
 
 
