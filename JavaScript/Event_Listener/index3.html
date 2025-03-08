@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeEventListener</title>
+    <!-- removeEventListener() is the opposite of addEventListener() in JavaScript. It's used to remove an event listener that was previously attached to an element using addEventListener(). This method is essential for managing event handlers, especially when they are no longer needed to prevent memory leaks and optimize performance. -->
+</head>
+<body>
+    <button id="myButton">Click me</button>
+
+    <script>
+        // Get the button element
+
+        let button = document.getElementById("myButton");
+
+        // function to handle button click
+        function handleButtonClick(){
+            button.style.backgroundColor = "red";
+            console.log("Button Clicked");
+            
+        }
+
+        // Add event listener to the button
+
+        button.addEventListener("click", handleButtonClick);
+
+
+        //Remove event listener after 5 second
+        setTimeout(function(){
+            button.removeEventListener("click",handleButtonClick);
+            alert("Event listener removed!");
+        }, 5000)
+    </script>
+</body>
+</html>

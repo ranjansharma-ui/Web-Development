@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p id="fpara">first para</p>
+        <p id="spara">second para</p>
+        <p id="tpara">third para</p>
+        <p id="fopara">forth para</p>
+    </div>
+
+
+    <script>
+        let paras = document.querySelectorAll('p');
+
+
+        function alertpara(){
+                alert("You have cliced on para: " + event.target.textContent);
+            }
+
+        for(let i=0; i<paras.length; i++){
+            let para = paras[i];
+            para.addEventListener('click',alertpara)
+        }
+    </script>
+</body>
+</html>

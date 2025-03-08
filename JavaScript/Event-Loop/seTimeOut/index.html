@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding setTimeout()</title>
+</head>
+<body>
+    <script>
+        function sayHello() {
+            console.log("Hello after 2 second");
+        }
+
+        setTimeout(sayHello,2000); /// call sayHello after 2 seconds (2000 milliseconds)
+
+        console.log("This will be printed immediately");
+
+
+        function greet(name){
+            console.log("Hello, "+ name + "!");
+
+        }
+
+        setTimeout(greet,1000,"Marco"); // call greet with "Marco" after 1 second
+
+    </script>
+</body>
+</html>

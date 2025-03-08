@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p id="fpara">first <span>first span</span> para</p>
+        <p id="spara">second  <span>second span</span> para</p>
+        <p id="tpara">third  <span>third span</span> para</p>
+        <p id="fopara">forth  <span>for span</span> para</p>
+    </div>
+
+
+
+    <script>
+        let mydiv = document.getElementById('wrapper');
+
+        function alertpara(event){
+
+            if(event.target.nodeName === 'SPAN'){
+                alert("You have cliced on para: " + event.target.textContent);
+            }
+        }
+
+        document.addEventListener('click', alertpara);
+    </script>
+</body>
+</html>

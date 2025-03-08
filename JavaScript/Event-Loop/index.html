@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("First request on cell stack");
+
+        setTimeout(function(){
+            console.log("After 1000ms this will get into task queue and there it'll wait for call stack to get empty");
+        }, 1000);
+
+        console.log("This request gets into call stack because the above function is Non-Blocking");
+        
+    </script>
+</body>
+</html>
