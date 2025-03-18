@@ -11,6 +11,10 @@ const Panel = (props) => {
             </p>):
             (<button onClick={props.onShow}>Show</button>)}
         </section>
+        <section>
+            
+            ranjan sharma
+        </section>
       
     </div>
   )
