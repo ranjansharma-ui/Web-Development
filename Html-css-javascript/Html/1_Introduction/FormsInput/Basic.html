@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" id="female">Female <br><br>
+
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea><br><br>
+        <button type="submit">submit</button>
+    </form>
+<!-- Frame allow dividing the browser window into multiple section, where each section can load a separate HTML document. These are two ways to use frame in Html. -->
+
+<!-- 1.Frameset (Obsolete) :- the <frameset> tag was used in older versions of Html to divide the web page into multiple sections, each loading a different HTML page. -->
+
+    <frameset cols="50%",50%>
+        <frame src="http://127.0.0.1:5500/Html-css-javascript/Html/1_Introduction/FormsInput/left.html">
+        <frame src="http://127.0.0.1:5500/Html-css-javascript/Html/1_Introduction/FormsInput/right.html">
+
+    </frameset>
+
+    
+
+
+
+</body>
+</html>
